@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Specials</title>
+
+    <style>
+        .beholder {
+            display: grid;
+            grid-template-columns: minmax(0,1fr) minmax(0,2fr) 200px;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: "logo overskrift overskrift "
+            "cover hovedtekst medlemmer" 
+            "utgivelser hovedtekst medlemmer" 
+            "wikipedia ofisiell youtube";
+            gap: 20px;
+        }
+
+        .overskrift {
+            grid-area: overskrift;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        .slogan {
+            grid-area: logo;
+            text-align: center;
+            border: 2px black solid;
+            padding: 10px 0;
+        }
+
+        .hovedtekst {
+            grid-area: hovedtekst;
+            grid-column: 2;
+            grid-row: 2 / span 2;
+        }
+
+        .lister {
+            background-color: black;
+            color: white;
+            padding-right: 20px;
+        }
+
+        .musikkvideo {
+            width: 200px;
+            height: 150px;
+        }
+
+        .lenker {
+            text-align: center;
+            border: 2px black solid;
+            padding: 25px 0px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="beholder">
+
+        <div class="overskrift"><h1>The Specials</h1></div>
+        
+        <div class="slogan"><h3>Coventrys finest</h3></div>
+        
+        <div> 
+            <img width="100%" src="https://upload.wikimedia.org/wikipedia/en/9/94/Specials_uk_front.jpg" alt="Platecover">
+        </div>
+
+        <div class="hovedtekst">
+            <p>
+                The Specials var et ska-band fra Coventry i England som hadde sin storhetstid på slutten av 
+                1970-tallet og begynnelsen av 1980-tallet
+            </p>
+            
+            <p>
+                Bandet ble startet som The Coventry Automatics. Dette ble snart endret til The Coventry Specials, 
+                Special A.K.A. og til slutt til The Specials.
+            </p>
+
+            <p>
+                Etter at Joe Strummer så en konsert med dem, ble de i 1978 invitert til å være oppvarmere for The 
+                Clash på deres turné, noe som ga dem en viss berømmelse. De valgte imidlertid å gi ut debutsingelen 
+                «Gangsters», som nådde nummer 6 på de britiske listene, på sitt eget selskap, 2 Tone Records.
+            </p>
+
+            <p>
+                Samme år ga de ut sitt selvtitulerte debutalbum, produsert av Elvis Costello. På dette albumet hadde 
+                de også med seg ska- og reggae-legenden Rico Rodriguez, noe som ga bandet stor kreditt. Singelen 
+                «Too Much Too Young» nådde 1.-plass på de britiske listene, men skapte også en del kontroverser siden 
+                den oppfordret til bruk av prevensjon.
+            </p>
+            <p>
+                Mens den lekne ska-lyden dominerte på debutalbumet, var det flere impulser på oppfølgeren More Specials 
+                som kom i 1980. Denne regnes derfor vel så ofte som en new wave-utgivelse. Den oppnådde heller ikke 
+                forgjengerens popularitet, men «Ghost Town» ble likevel bandets andre og siste nummer 1-hit i Storbritannia
+            </p>
+        </div>
+
+        <div class="lister">
+            <ul>
+                <h3>Medlemmer</h3>
+                <li>Jerry Dammers, keyboard</li>
+                <li>Terry Hall, sang</li>
+                <li>Roddy Radiation, gitar</li>
+                <li>John Bradbury, trommer</li>
+                <li>Horace Panter, bass</li>
+                <li>Lynval Golding, gitar og sang</li>
+                <li>Neville Staples, sang</li>
+            </ul>
+        </div>
+    
+        <div class="lister">
+            <ol>
+                <h3>Noen utgivelser</h3>
+                <li>The Specials, 1979</li>
+                <li>More Specials, 1980</li>
+                <li>The Singles collection, 1991</li>
+                <li>Stereo-Typical: A's, B's and Rarities, 2005</li>
+            </ol>
+        </div>
+
+        <div>
+            <iframe class="musikkvideo" src="https://www.youtube.com/embed/lgCZN1rU5co"></iframe>
+        </div>
+
+        <div class="lenker"><a href="https://no.wikipedia.org/wiki/The_Specials">Wikipedia</a></div>
+        <div class="lenker"><a href="https://www.thespecials.com">Offisiell nettside</a></div>
+
+        <div class="lenker"><a href="https://www.youtube.com/channel/UCeNxuVVmAOl_L6E8hCymT8w">YouTube-kanal</a></div>
+    </div>
+
+
+
+</body>
+</html>
